@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import (
-    QCheckBox, QSpinBox, QLineEdit, QHBoxLayout, QLabel, QWidget, QFormLayout, QGroupBox, QVBoxLayout
+    QCheckBox, QSpinBox, QLineEdit, QHBoxLayout, QLabel, QWidget, QFormLayout, QGroupBox
 )
-from typing import Any, Dict
+from typing import Dict, Any
 
 
 class FormBuilder:
