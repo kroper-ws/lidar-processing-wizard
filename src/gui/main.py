@@ -1,5 +1,4 @@
 import sys
-import qdarktheme
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget
 from gui.lasindex_tab import LasIndexTab
 from gui.lasinfo_tab import LasInfoTab
@@ -65,7 +64,6 @@ def main():
     displays the main window.
     """
     app = QApplication(sys.argv)
-    app.setStyleSheet(qdarktheme.load_stylesheet())
     window = MainWindow()
     window.show()
     sys.exit(app.exec_())
