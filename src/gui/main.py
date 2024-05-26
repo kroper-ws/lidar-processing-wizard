@@ -1,11 +1,9 @@
 import sys
 import qdarktheme
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget
-
 from gui.lasindex_tab import LasIndexTab
 from gui.lasinfo_tab import LasInfoTab
 from utils.utilities import load_config, setup_logging
-
 
 class MainWindow(QMainWindow):
     """
@@ -61,7 +59,6 @@ class MainWindow(QMainWindow):
         self.tab_widget.addTab(lasindex_tab, "Index")
         self.tab_widget.addTab(lasinfo_tab, "Info")
 
-
 def main():
     """
     Main entry point of the application. Sets up the application and
@@ -72,7 +69,6 @@ def main():
     window = MainWindow()
     window.show()
     sys.exit(app.exec_())
-
 
 if __name__ == "__main__":
     main()
