@@ -1,0 +1,222 @@
+{
+    "LASINFO_PARAMS": {
+        "cpu64": {
+            "label": "Use 64-bit executable",
+            "type": "checkbox"
+        },
+        "fail": {
+            "label": "Fail on license error",
+            "type": "checkbox"
+        },
+        "gui": {
+            "label": "Load into GUI",
+            "type": "checkbox"
+        },
+        "h": {
+            "label": "Print help",
+            "type": "checkbox"
+        },
+        "quiet": {
+            "label": "Suppress console output",
+            "type": "checkbox"
+        },
+        "v": {
+            "label": "Verbose output",
+            "type": "checkbox"
+        },
+        "version": {
+            "label": "Print version",
+            "type": "checkbox"
+        },
+        "wait": {
+            "label": "Wait for input",
+            "type": "checkbox"
+        },
+        "buffered": {
+            "label": "Read/write buffer size",
+            "type": "spinbox",
+            "min": 0,
+            "max": 1000000
+        },
+        "chunk_size": {
+            "label": "Chunk size in bytes",
+            "type": "spinbox",
+            "min": 0,
+            "max": 100000000
+        },
+        "comma_not_point": {
+            "label": "Use comma as decimal",
+            "type": "checkbox"
+        },
+        "histo_avg": {
+            "label": "Histogram settings",
+            "type": "lineedit"
+        },
+        "neighbors": {
+            "label": "Neighbors filename",
+            "type": "lineedit"
+        },
+        "neighbors_lof": {
+            "label": "Neighbors list of files",
+            "type": "lineedit"
+        },
+        "stored": {
+            "label": "Use in-memory reader",
+            "type": "checkbox"
+        },
+        "i": {
+            "label": "Input file or mask",
+            "type": "lineedit"
+        },
+        "io_ibuffer": {
+            "label": "Input buffer size",
+            "type": "spinbox",
+            "min": 0,
+            "max": 1000000
+        },
+        "iparse": {
+            "label": "Input parser fields",
+            "type": "lineedit"
+        },
+        "ipts": {
+            "label": "Input as PTS",
+            "type": "checkbox"
+        },
+        "iptx": {
+            "label": "Input as PTX",
+            "type": "checkbox"
+        },
+        "iptx_transform": {
+            "label": "Transform PTX data",
+            "type": "checkbox"
+        },
+        "iskip": {
+            "label": "Skip lines in input",
+            "type": "spinbox",
+            "min": 0,
+            "max": 1000000
+        },
+        "itxt": {
+            "label": "Input as text file",
+            "type": "checkbox"
+        },
+        "lof": {
+            "label": "List of input files",
+            "type": "lineedit"
+        },
+        "unique": {
+            "label": "Remove duplicate files",
+            "type": "checkbox"
+        },
+        "merged": {
+            "label": "Merge input files",
+            "type": "checkbox"
+        },
+        "stdin": {
+            "label": "Pipe from stdin",
+            "type": "checkbox"
+        },
+        "compatible": {
+            "label": "Compatibility mode",
+            "type": "checkbox"
+        },
+        "do_not_populate": {
+            "label": "Do not populate header",
+            "type": "checkbox"
+        },
+        "io_obuffer": {
+            "label": "Output buffer size",
+            "type": "spinbox",
+            "min": 0,
+            "max": 1000000
+        },
+        "native": {
+            "label": "Native mode output",
+            "type": "checkbox"
+        },
+        "nil": {
+            "label": "Suppress output",
+            "type": "checkbox"
+        },
+        "o": {
+            "label": "Output file",
+            "type": "lineedit"
+        },
+        "obin": {
+            "label": "Output as BIN",
+            "type": "checkbox"
+        },
+        "ocut": {
+            "label": "Cut characters from name",
+            "type": "spinbox",
+            "min": 0,
+            "max": 100
+        },
+        "odir": {
+            "label": "Output directory",
+            "type": "lineedit"
+        },
+        "odix": {
+            "label": "Output file suffix",
+            "type": "lineedit"
+        },
+        "oforce": {
+            "label": "Force output creation",
+            "type": "checkbox"
+        },
+        "olas": {
+            "label": "Output as LAS",
+            "type": "checkbox"
+        },
+        "olaz": {
+            "label": "Output as LAZ",
+            "type": "checkbox"
+        },
+        "oparse": {
+            "label": "Parse to ASCII",
+            "type": "lineedit"
+        },
+        "opts": {
+            "label": "Output as PTS",
+            "type": "checkbox"
+        },
+        "optx": {
+            "label": "Output as PTX",
+            "type": "checkbox"
+        },
+        "oqi": {
+            "label": "Output in QFIT format",
+            "type": "checkbox"
+        },
+        "oscale_rgb": {
+            "label": "Scale output RGB",
+            "type": "spinbox",
+            "min": 0,
+            "max": 1000
+        },
+        "osep": {
+            "label": "Text output separator",
+            "type": "lineedit"
+        },
+        "owrl": {
+            "label": "Output as VRML",
+            "type": "checkbox"
+        },
+        "pipe_on": {
+            "label": "Write to command pipe",
+            "type": "checkbox"
+        },
+        "populate": {
+            "label": "Populate header",
+            "type": "checkbox"
+        },
+        "stdout": {
+            "label": "Pipe to stdout",
+            "type": "checkbox"
+        },
+        "temp_files": {
+            "label": "Base name for temp files",
+            "type": "lineedit"
+        }
+    }
+}
