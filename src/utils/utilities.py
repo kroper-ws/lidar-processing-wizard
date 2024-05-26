@@ -3,7 +3,7 @@ import configparser
 import os
 from typing import Optional
 import sys
-
+from datetime import datetime
 
 def load_config(config_path: str = 'config/config.ini') -> configparser.ConfigParser:
     """
@@ -32,7 +32,7 @@ def setup_logging(log_directory: str, log_file: str, log_level: Optional[str] = 
 
     Args:
         log_directory (str): Directory to store log files.
-        log_file (str): Name of the log file.
+        log_file (str): Base name of the log file.
         log_level (str, optional): Logging level. Defaults to 'INFO'.
 
     Returns:
@@ -41,7 +41,10 @@ def setup_logging(log_directory: str, log_file: str, log_level: Optional[str] = 
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
-    log_path = os.path.join(log_directory, log_file)
+    # Append timestamp to log file name
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    log_file_with_timestamp = f"{os.path.splitext(log_file)[0]}_{timestamp}{os.path.splitext(log_file)[1]}"
+    log_path = os.path.join(log_directory, log_file_with_timestamp)
 
     logging.basicConfig(
         level=getattr(logging, log_level.upper(), logging.INFO),
@@ -71,5 +74,5 @@ def validate_config(config: configparser.ConfigParser, sections: dict) -> None:
         if section not in config:
             raise ValueError(f"Missing section in configuration file: {section}")
         for key in keys:
-            if key not in config[section]:
+            if key not in config[section]]:
                 raise ValueError(f"Missing key in section '{section}': {key}")
