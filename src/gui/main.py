@@ -2,9 +2,9 @@ import sys
 import qdarktheme
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget
 
-from lasindex_tab import LasIndexTab
-from lasinfo_tab import LasInfoTab
-from utilities import load_config, setup_logging
+from gui.lasindex_tab import LasIndexTab
+from gui.lasinfo_tab import LasInfoTab
+from utils.utilities import load_config, setup_logging
 
 
 class MainWindow(QMainWindow):
