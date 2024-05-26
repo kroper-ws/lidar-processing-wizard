@@ -1,7 +1,7 @@
 import logging
 from PyQt5.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QFormLayout, QLabel, QLineEdit, QPushButton,
-    QSpinBox, QTextEdit, QProgressBar, QFileDialog, QCheckBox, QScrollArea, QWidget, QMessageBox
+    QTextEdit, QProgressBar, QFileDialog, QWidget, QMessageBox, QCheckBox, QScrollArea
 )
 from PyQt5.QtCore import Qt, QThreadPool
 from utils.worker import Worker
