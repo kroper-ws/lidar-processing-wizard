@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import (
     QSpinBox, QTextEdit, QProgressBar, QFileDialog, QCheckBox, QScrollArea, QWidget, QMessageBox
 )
 from PyQt5.QtCore import Qt, QThreadPool
-from worker import Worker
+from utils.worker import Worker
 
 
 class BaseTab(QWidget):
