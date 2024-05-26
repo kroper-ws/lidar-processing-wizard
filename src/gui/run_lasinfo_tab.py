@@ -1,5 +1,5 @@
 import logging
-from PyQt5.QtWidgets import QCheckBox, QSpinBox, QLineEdit, QVBoxLayout
+from PyQt5.QtWidgets import QCheckBox, QSpinBox, QLineEdit, QVBoxLayout, QFileDialog
 from gui.base_tab import BaseTab
 from utils.form_builder import FormBuilder
 from processing.run_lasinfo import run_lasinfo
@@ -49,7 +49,7 @@ class LasInfoTab(BaseTab):
                 self.params_widgets[param] = form_builder.add_checkbox(config['label'], config.get('default', False))
             elif config['type'] == 'spinbox':
                 self.params_widgets[param] = form_builder.add_spinbox(config['label'], config['min'], config['max'], config.get('default'))
-            elif config['type'] == 'lineedit':
+            elif config['type'] == 'lineedit']:
                 self.params_widgets[param] = form_builder.add_lineedit(config['label'], config.get('default', ''))
 
     def collect_params(self) -> dict:
